@@ -1,0 +1,53 @@
+{% extends 'portfolioapp/base.html' %} {% block code %} {% load static %}
+<h2>E D U C A T I O N</h2>
+<div class="education_main">
+  <div class="education-1">
+    <img
+      src="{% static 'portfolioapp/loyalistcollege.jpg' %}"
+      alt="image not found"
+      style="width: 300px; height: 200px"
+    />
+    <div class="education-text">
+      <h4>
+        Graduate Certificate in Computer Software and Database Development
+      </h4>
+      <br />
+      <p>
+        Loyalist College in Toronto, Toronto, ON
+        <br />
+        Sept/2021 – Present
+        <br><br>
+        <strong>Main learnings</strong> 
+        relational database MySQL - Mysql queries, relationships among tables and data normalizations, data analysis and visualization.
+        <br>
+        Computer networking and cybersecurity threats and preventions.
+        <br>
+        Front-end technologies such as HTML, CSS, JavaScript, ReatJs.
+        <br>
+        Back-end technologies like Php, Java, C#
+      </p>
+    </div>
+  </div>
+  <div class="education-2">
+    <div class="education-text">
+      <h4>Graduate Certificate in Information Technology</h4>
+      <br />
+      <p>
+        A.B College in Punjab, India
+        <br />
+        March/2015 – April/2018
+        <br>
+        <br>
+        Gained knowledge of the basics of IT.<br>
+        Learned object-oriented languages like Java, C++, C#, and Python.
+      </p>
+    </div>
+    <img
+      src="{% static 'portfolioapp/ab.jpeg' %}"
+      alt="image not found"
+      style="width: 300px; height: 200px"
+    />
+  </div>
+</div>
+
+{% endblock %}

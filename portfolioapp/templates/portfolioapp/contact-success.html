@@ -1,0 +1,58 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="fontawesomefree/js/all.min.js"></script>
+    <!-- <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script> -->
+
+    <title>Thanks</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+        }
+        
+        
+        .mail-success{
+            width: 50%;
+            text-align: center;
+            /* background-color: rgb(128, 145, 145); */
+            margin: auto;
+            margin-top: 35vh;
+            padding: 10px;
+            
+            
+            
+
+        }
+        button{
+            background-color: rgb(79, 166, 79);
+            border-radius: 10px;
+            width: 100px;
+            height: 50px;
+        }
+        a {
+            text-decoration: none;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="mail-success">
+        
+        <h3>Thanks for contacting me!</h3>
+        
+        <h3>I will get back to you very soon!</h3>
+        <button>
+            <a href="{% url 'home-page' %}">home</a>
+        </button>
+       
+    </div>
+     
+    
+</body>
+</html>

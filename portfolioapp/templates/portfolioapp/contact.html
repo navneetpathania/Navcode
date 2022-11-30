@@ -1,0 +1,24 @@
+{% extends 'portfolioapp/base.html' %}
+{% block code %}
+<div class="contact-wrapper">
+    <div class="contactform-section"> 
+        <h2>Contact me</h2>
+        <p>I am interesed in freelance opportunities.
+             If you have any request and question don't hesitate to contact me 
+        </p>
+        <form method="post" class="contact-form">
+            {% csrf_token %}
+            <input type="text" class="name-field" name="name-field" placeholder="Name">
+            <input type="email" class="email-field" name="email-field" placeholder="Email">
+            <input type="text" class="subject-field" name="subject-field" placeholder="Subject">
+           <textarea name="textarea-field" class="textarea-field" cols="30" placeholder="Message" rows="10"></textarea>
+           <div class="contact-button-div">
+            <button type="submit" class="contact-button">Contact me</button>
+           </div>
+           <!-- comment -->
+        </form>
+        
+    </div>
+    
+</div>
+{% endblock %}

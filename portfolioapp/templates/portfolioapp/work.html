@@ -1,0 +1,32 @@
+{% extends 'portfolioapp/base.html' %}
+{% load static %}
+{% block code %}
+	<h2>My Work</h2>
+	
+	<div class="my-projects">
+		<figure>
+			<a href="https://navblogpost.herokuapp.com/">
+			<img src="{% static 'portfolioapp/blog.jpg' %}"  style=" width:300px; height: 200px" alt="image not found"></img>
+			<figcaption>Blog Post</figcaption>
+			</a>
+			
+		</figure>
+		<figure>
+			<img src="{% static 'portfolioapp/payment.jpg' %}"  style=" width:300px; height: 200px" alt=""></img>
+			<figcaption>Payment</figcaption>
+		</figure>
+		<figure>
+			<img src="{% static 'portfolioapp/shopping.jpeg' %}"  style=" width:300px; height: 200px" alt=""></img>
+			<figcaption>Lets shop</figcaption>
+		</figure>
+		<figure>
+			<img src="{% static 'portfolioapp/logo.jpg' %}"  style=" width:300px; height: 200px" alt=""></img>
+			<figcaption>Lets shop</figcaption>
+		</figure>
+
+
+	</div>
+
+	
+	  
+	{% endblock %}
